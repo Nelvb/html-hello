@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,31 +10,174 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-<div class="container mt-5">
-  <h2 class="Title">Payment form example</h2>
-  <form>
+    <div class="container mt-5">
+        <div class="bg-light p-3 pb-1">
+            <h2 class="mb-4">Payment form example</h2>
+        </div>
+        <form>
+            <fieldset class="border p-4">
+                <div class="alert alert-danger" role="alert">
+                    Some fields are missing
+                </div>
+                <div class="row mb-3">
+                    <div class="col-5 md-4 fw-bold">
+                        <label for="cardNumber" class="form-label">Card #</label>
+                        <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX">
+                    </div>
+                    <div class="col-3 md-2 fw-bold">
+                        <label for="cvcNumber" class="form-label">CVC #</label>
+                        <input type="text" class="form-control" id="cvcNumber" placeholder="0000">
+                    </div>
+                    <div class="col-4 md-2 fw-bold ">
+                        <label for="amount" class="form-label">Amount</label>
+                        <input type="text" class="form-control" id="amount" placeholder="$ Amount">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6 md-4 fw-bold ">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="col-6 md-4 fw-bold">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6 md-4 fw-bold">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="City">
+                    </div>
+                    <div class="col-3 md-2 fw-bold">
+                        <label for="state" class="form-label">Provinces</label>
+                        <select id="state" class="form-select">
+                            <option selected>Pick a province</option>
+                            <option>Álava (Araba) - País Vasco (Euskadi)</option>
+                            <option>Albacete - Castilla-La Mancha</option>
+                            <option>Alicante (Alacant) - Comunidad Valenciana</option>
+                            <option>Almería - Andalucía</option>
+                            <option>Asturias - Principado de Asturias</option>
+                            <option>Ávila - Castilla y León</option>
+                            <option>Badajoz - Extremadura</option>
+                            <option>Barcelona - Cataluña (Catalunya)</option>
+                            <option>Burgos - Castilla y León</option>
+                            <option>Cáceres - Extremadura</option>
+                            <option>Cádiz - Andalucía</option>
+                            <option>Cantabria - Cantabria</option>
+                            <option>Castellón (Castelló) - Comunidad Valenciana</option>
+                            <option>Ciudad Real - Castilla-La Mancha</option>
+                            <option>Córdoba - Andalucía</option>
+                            <option>Cuenca - Castilla-La Mancha</option>
+                            <option>Girona (Gerona) - Cataluña (Catalunya)</option>
+                            <option>Granada - Andalucía</option>
+                            <option>Guadalajara - Castilla-La Mancha</option>
+                            <option>Gipuzkoa (Guipúzcoa) - País Vasco (Euskadi)</option>
+                            <option>Huelva - Andalucía</option>
+                            <option>Huesca - Aragón</option>
+                            <option>Illes Balears (Islas Baleares) - Islas Baleares</option>
+                            <option>Jaén - Andalucía</option>
+                            <option>La Rioja - La Rioja</option>
+                            <option>Las Palmas - Canarias</option>
+                            <option>León - Castilla y León</option>
+                            <option>Lleida (Lérida) - Cataluña (Catalunya)</option>
+                            <option>Lugo - Galicia</option>
+                            <option>Madrid - Comunidad de Madrid</option>
+                            <option>Málaga - Andalucía</option>
+                            <option>Murcia - Región de Murcia</option>
+                            <option>Navarra (Nafarroa) - Comunidad Foral de Navarra</option>
+                            <option>Ourense (Orense) - Galicia</option>
+                            <option>Palencia - Castilla y León</option>
+                            <option>Pontevedra - Galicia</option>
+                            <option>Salamanca - Castilla y León</option>
+                            <option>Santa Cruz de Tenerife - Canarias</option>
+                            <option>Segovia - Castilla y León</option>
+                            <option>Sevilla - Andalucía</option>
+                            <option>Soria - Castilla y León</option>
+                            <option>Tarragona - Cataluña (Catalunya)</option>
+                            <option>Teruel - Aragón</option>
+                            <option>Toledo - Castilla-La Mancha</option>
+                            <option>Valencia (València) - Comunidad Valenciana</option>
+                            <option>Valladolid - Castilla y León</option>
+                            <option>Bizkaia (Vizcaya) - País Vasco (Euskadi)</option>
+                            <option>Zamora - Castilla y León</option>
+                            <option>Zaragoza - Aragón</option>
+                            <option>Ceuta - Ceuta</option>
+                            <option>Melilla - Melilla</option>
+                        </select>
+                    </div>
+                    <div class="col-3 md-2 fw-bold">
+                        <label for="postalCode" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="postalCode" placeholder="Postal Code">
+                    </div>
+                </div>
 
 
 
-  </form>
+
+                <div class="row mb-3">
+                    <div class="col-3 md-4 fw-bold">
+                        <label>We accept:</label>
 
 
 
+                            <div class="d-flex justify-content-center align-items-center bg-secondary text-white rounded p-1 border mb-3">
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    <i class="fa-brands fa-cc-mastercard"></i>
+                                </label>
+                            </div>
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                </label>
+                            </div>
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    <i class="fa-brands fa-cc-amex"></i>
+                                </label>
+                            </div>
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault4">
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                    <i class="fa-brands fa-cc-diners-club"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
 
-</div>
-
-
-
-
-
-
+                    <div class="col-6 md-6 fw-bold ">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3"
+                            placeholder="Add any notes here."></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-end">
+                        <button type="button" class="btn btn-secondary">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
